@@ -17,13 +17,13 @@ def gaussian(alpha):
     return phi
 
 def multi_quadratic(alpha):
-    # phi = torch.ones_like(alpha) / (torch.ones_like(alpha) + alpha.pow(2))
-    phi = 0.5*torch.log(torch.ones_like(alpha) + alpha.pow(2))
+    # phi = torch.ones_like(alpha) / (torch.ones_like(alpha) + alpha)
+    phi = 0.5*torch.log(torch.ones_like(alpha) + alpha)
     return phi
 
 def inverse_quadratic(alpha):
-    # phi = torch.ones_like(alpha) / (torch.ones_like(alpha) + alpha.pow(2))
-    phi = -torch.log(torch.ones_like(alpha) + alpha.pow(2))
+    # phi = torch.ones_like(alpha) / (torch.ones_like(alpha) + alpha)
+    phi = -torch.log(torch.ones_like(alpha) + alpha)
     return phi
 
 class PlsvVAE(nn.Module):
