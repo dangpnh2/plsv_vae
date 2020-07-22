@@ -16,9 +16,8 @@ def gaussian(alpha):
     phi = -0.5*alpha
     return phi
 
-def multi_quadratic(alpha):
-    # phi = torch.ones_like(alpha) / (torch.ones_like(alpha) + alpha)
-    phi = 0.5*torch.log(torch.ones_like(alpha) + alpha)
+def inverse_multi_quadric(alpha):
+    phi = -0.5*torch.log(torch.ones_like(alpha) + alpha)
     return phi
 
 def inverse_quadratic(alpha):
