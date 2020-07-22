@@ -49,8 +49,8 @@ class PlsvVAE(nn.Module):
             self.basis_func = gaussian
         if distance=="inverse_quadratic":
             self.basis_func = inverse_quadratic
-        if distance=="multi_quadratic":
-            self.basis_func = multi_quadratic
+        if distance=="inverse_multi_quadric":
+            self.basis_func = inverse_multi_quadric
         self.init_parameters()
 
 
