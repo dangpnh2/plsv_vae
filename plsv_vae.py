@@ -128,7 +128,7 @@ class PlsvVAE(nn.Module):
         N = posterior_mean.shape[0]
         L = recon_v.shape[0]
         NL = -(input_ * (recon_v+1e-10).log()).sum(-1)
-
+        
         prior_mean   = self.prior_mean.expand_as(posterior_mean)
         prior_var    = self.prior_var.expand_as(posterior_mean)
         prior_logvar = self.prior_logvar.expand_as(posterior_mean)
@@ -138,9 +138,9 @@ class PlsvVAE(nn.Module):
         logvar_division = prior_logvar - posterior_logvar
 
         
-        xKLD = 0.5 * ( (var_division + diff_term + logvar_division).sum(-1) - self.num_coordinate) 
-        return_xKLD = xKLD.mean(0)
-        KL = return_xKLD
-        loss = NL.sum() + KL 
+        KL = 0.5 * ( (var_division + diff_term + logvar_division).sum(-1) - self.num_coordinate) 
+        NL_mean = NL.mean()
+        KL_mean = KL.mean()
+        loss = NL_mean + KL_mean
         
-        return loss/N, NL.sum(), return_xKLD,  KL       
+        return loss, NL_mean, KL_mean 
