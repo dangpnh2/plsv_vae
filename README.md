@@ -1,3 +1,6 @@
+## Credit
+I started from a fork of this [repo](https://github.com/hyqneuron/pytorch-avitm.git).
+
 # PLSV-VAE 
 Pytorch Implementation of Auto-Encoding Variational Bayes for Inferring Topics and Visualization
 
