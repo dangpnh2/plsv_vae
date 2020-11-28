@@ -1,6 +1,6 @@
 
 # PLSV-VAE 
-Pytorch Implementation of Auto-Encoding Variational Bayes for Inferring Topics and Visualization
+Pytorch Implementation of [Auto-Encoding Variational Bayes for Inferring Topics and Visualization](https://arxiv.org/abs/2010.09233)
 
 ## Train
 Python version: 3.6, Pytorch version: 1.2.0.
