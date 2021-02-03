@@ -13,7 +13,7 @@ Available distance functions: gaussian, multi_quadratic, and inverse_quadratic.
 
 To train your own dataset:
 
-* Preprocess your dataset (use your own preprocessing functions or use ouru preprocessing function in data_preprocessing.py).
+* Preprocess your dataset (use your own preprocessing functions or use our preprocessing function in data_preprocessing.py).
 * Vectorize train data (for large dataset, to avoid memory problem, we recommend using gensim instead of CountVectorizer of sklearn).
 * Run train.py script.
 ## Example
