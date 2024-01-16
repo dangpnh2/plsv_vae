@@ -21,3 +21,14 @@ To train your own dataset:
 
 ## Credit
 I started from a fork of this [repo](https://github.com/hyqneuron/pytorch-avitm.git).
+
+## Citing
+If you use the data or the model, please cite,
+```
+@inproceedings{pham2020auto,
+  title={Auto-Encoding Variational Bayes for Inferring Topics and Visualization},
+  author={Pham, Dang and Le, Tuan},
+  booktitle={Proceedings of the 28th International Conference on Computational Linguistics},
+  year={2020}
+}
+```
