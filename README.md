@@ -18,6 +18,8 @@ To train your own dataset:
 * Run train.py script.
 ## Example
 * train_nb.ipynb: Training example with top words and visualization on REUTERS dataset.
+* Example on arxiv dataset with top-10 topic words:
+![arxiv 50 topics](_arxiv_50topics.png)
 
 ## Credit
 I started from a fork of this [repo](https://github.com/hyqneuron/pytorch-avitm.git).
